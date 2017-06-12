@@ -45,6 +45,7 @@ public class TestClient {
 
         Adapter1 a = defaultAdapter;
         for (Device1 d : a.getDevices()) {
+              System.out.println(d.getName());
             if ("CC2650 SensorTag".equals(d.getName())) {
                 System.out.println(" ==> Device: " + d.getName());
                 try {
