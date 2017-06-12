@@ -14,6 +14,9 @@ import java.util.logging.Level;
 public class TestClient {
     public static void main(String[] args) throws InterruptedException {
 
+        //String [] cmd ={"sh", "test.sh", "/home/pi/test/test.sh"};
+        //Runtime.getRuntime().exec(cmd);
+
         ObjectManager m = ObjectManager.getInstance();
         ObjectManager.getLogger().setLevel(Level.FINE);
 
@@ -46,7 +49,7 @@ public class TestClient {
         Adapter1 a = defaultAdapter;
         for (Device1 d : a.getDevices()) {
               System.out.println(d.getName());
-            if ("CC2650 SensorTag".equals(d.getName())) {
+            if ("Olzhas Nurmukhanov".equals(d.getName())) {
                 System.out.println(" ==> Device: " + d.getName());
                 try {
                     if (!d.getConnected()) {
